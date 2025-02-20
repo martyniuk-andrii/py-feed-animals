@@ -5,7 +5,6 @@ class Animal:
             appetite: int,
             is_hungry: bool = True
     ) -> None:
-
         self.name = name
         self.appetite = appetite
         self.is_hungry = is_hungry
@@ -18,9 +17,7 @@ class Animal:
             print(f"Eating {self.appetite} food points...")
             self.is_hungry = False
             return self.appetite
-        else:
-            self.appetite = 0
-            return self.appetite
+        return 0
 
 
 class Cat(Animal):
